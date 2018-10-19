@@ -23,8 +23,14 @@ public class Fish extends Actor
     public void act() 
     {
         move(3);
-        if(r.nextInt(20) == 0){
+        int rand = r.nextInt(40);
+        if(rand == 0){
             turn(90);
+        } else if(rand==1){
+            turn(-90);
+        }
+        if(isAtEdge()){
+            turn(180);
         }
     }    
 }

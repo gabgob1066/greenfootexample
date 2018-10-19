@@ -16,6 +16,7 @@ public class Player2 extends Player
         MouseInfo mouse = Greenfoot.getMouseInfo();
         if(mouse!=null){
             turnTowards(mouse.getX(), mouse.getY());
+            // Button 1 is left click
             if(mouse.getButton()==1){
                 move(5);
             }

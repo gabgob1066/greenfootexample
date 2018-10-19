@@ -47,6 +47,8 @@ public class MyWorld extends World
         addObject(fish6,352,360);
         Player player = new Player();
         addObject(player,484,138);
+        Spider spider = new Spider();
+        addObject(spider,279,220);
     }
     
     public void addScore(int toAdd){
