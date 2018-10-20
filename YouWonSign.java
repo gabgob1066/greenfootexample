@@ -14,6 +14,6 @@ public class YouWonSign extends Actor
      */
     public void addedToWorld(World world) 
     {
-         setImage(new GreenfootImage("You Won!", 100, Color.RED, Color.GRAY));
+         setImage(new GreenfootImage(((MyWorld)world).score>0?"You Unfroze the kingdom!":"Arrendale is disappointed", 50, Color.RED, Color.GRAY));
     }    
 }
